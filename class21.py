@@ -70,3 +70,22 @@ def generate_squares(n):
 a=generate_squares(10)
 print(type(a)) #generator
 
+########################################################################
+a=(i**2 for i in range(10)) #It is a generator which returns a generator
+'''
+There is no tuple comprehension in python
+'''
+for i in a:
+    print(i)
+'''Generator is nothing but an iterator'''
+
+a=generate_squares(10)
+next(a)
+
+a=(i**2 for i in range(10))
+print(iter(a))
+print(a)
+
+a=(i**2 for i in range(10))
+print(next(a))
+print(next(a))
