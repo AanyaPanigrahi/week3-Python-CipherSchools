@@ -84,3 +84,7 @@ d1.tricks # ['fetch','talk']
 d2=Dog("Bella")
 d2.tricks # ['fetch','talk']
 
+# a=[]
+# b=a
+# b.append(1)
+#Ultimately we are appending on a
